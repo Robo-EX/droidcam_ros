@@ -1,9 +1,11 @@
 ## Description
 Using DroidCamX apk able to stream android camera data wireless over ROS topic using ROS Node. 
 ### To run:
-directly: python src/droidcam.py -u http://192.168.0.101:4747/video (argument -u to set url -g to show a GUI of the camera stream) 
+directly: `python src/droidcam.py -u http://192.168.0.101:4747/video` (argument -u to set url -g to show a GUI of the camera stream) 
 
-using roslaunch: roslaunch droidcam_ros droidcam.launch
+using roslaunch: `roslaunch droidcam_ros droidcam.launch`
+
+running camera_info node: `rosrun droidcam_ros camerainfo.py ~/YOUR_ROS_WORKSPACE_NAME/src/droidcam_ros/calibrationdata/ost.yaml`
 
 ### Apk download link
 - https://play.google.com/store/apps/details?id=com.dev47apps.droidcamx 
