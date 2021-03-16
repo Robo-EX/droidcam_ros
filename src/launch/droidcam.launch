@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="droidcam_ros" type="droidcam.py" name="droidcam" args = "-u http://192.168.0.101:4747/video" output="screen"/>
+    <node pkg="image_view" type="image_view" name="image_view" args = "image:=/camera/image_raw" output="screen" />
+</launch>
